@@ -29,9 +29,7 @@ jobs:
           sdkmanager "platform-tools"
           sdkmanager "platforms;android-35"
           sdkmanager "build-tools;35.0.0"
-        - name: Setup Gradle Wrapper
-  run: gradle wrapper
-
+        
       - name: Make Gradle executable
         run: chmod +x ./gradlew
 
