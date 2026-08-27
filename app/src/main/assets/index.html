@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Is My Destination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="hero">
+        <div class="logo">📍</div>
+        <h1>Where Is My Destination?</h1>
+        <p>Find your destination quickly and easily</p>
+    </div>
+
+    <div class="card">
+
+        <label for="destination">Enter your destination</label>
+
+        <input
+            id="destination"
+            type="text"
+            placeholder="e.g. India Gate, New Delhi"
+            autocomplete="off"
+        >
+
+        <div class="buttons">
+            <button id="navigateBtn" class="primary">
+                🧭 Navigate
+            </button>
+
+            <button id="clearBtn" class="secondary">
+                Clear
+            </button>
+        </div>
+
+        <div class="transport-title">
+            Choose transport mode
+        </div>
+
+        <div class="transport">
+            <button class="mode active" data-mode="driving">🚗<span>Car</span></button>
+            <button class="mode" data-mode="walking">🚶<span>Walk</span></button>
+            <button class="mode" data-mode="bicycling">🚲<span>Bike</span></button>
+            <button class="mode" data-mode="transit">🚌<span>Transit</span></button>
+        </div>
+
+        <div id="message" class="message">
+            Enter a destination to begin.
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Where Is My Destination
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
